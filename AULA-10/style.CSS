@@ -1,0 +1,16 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    color: white;
+    background-color: lightsalmon;
+}
+
+h2,p{
+    color: darkred;
+}
+
+a{
+    font-size: 1cm;
+}
