@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA-14</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro de Pessoa Física</h1>
+
+    <form action="mailto:guilhermeladislau013@gmail.com" method="post">
+
+        <label for="nome-usuario">Nome de usuário</label>
+        <br>
+        <input type="text" name="nome-usuario" id="nome-usuario" size="50" value="" placeholder="Digite seu nome"
+            required>
+        <br><br>
+        <label for="data-nascimento">Data de Nascimento</label>
+        <input type="date" required>
+        <br><br>
+
+        <label for="CPF">CPF</label>
+        <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+        <br><br>
+
+        <label for="rg">RG / Documento</label>
+        <input type="text" name="rg" id="rg">
+        <br><br>
+
+        <label for="filiacaomae">Filiação (Nome da mãe)</label>
+        <input type="text" name="nome-mae" id="nome-mae" size="50">
+        <br><br>
+
+        <label for="filiacaopai">Filiação (Nome da mãe)</label>
+        <input type="text" name="nome-pai" id="nome-pai" size="50">
+        <br><br>
+
+        <div id="endereco">
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" required>
+            <br><br>
+
+            <label for="logradouro">Logradouro</label>
+            <input type="text" name="logradouro" id="logradouro" required>
+            <br><br>
+
+            <label for="numero">Número</label>
+            <input type="number" name="numero" id="numero">
+            <br><br>
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" required>
+            <br><br>
+
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+            <br><br>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" required>
+            <br><br>
+
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" id="estado" placeholder="UF" required>
+            
+
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
