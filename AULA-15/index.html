@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA-15</title>
+</head>
+
+<body>
+
+    <h1>Calculadora de idade</h1>
+
+    <label for="dia">Digite o dia o nascimento: </label> <br>
+    <input id='inputUsuarioDia' size="60" type="number">
+    <br>
+
+    <label for="mes">Mês</label>
+    <select name="mesDeNascimento" id="mesDeNascimento">mês de nascimento
+        <option value="janeiro">Janeiro</option>
+        <option value="janeiro">Fevereiro</option>
+        <option value="janeiro">Março</option>
+        <option value="janeiro">Abril</option>
+        <option value="janeiro">Maio</option>
+        <option value="janeiro">Junho</option>
+        <option value="janeiro">Julho</option>
+        <option value="janeiro">Agosto</option>
+        <option value="janeiro">Setembro</option>
+        <option value="janeiro">Outubro</option>
+        <option value="janeiro">Novembro</option>
+        <option value="janeiro">Dezembro</option>
+    </select> <br>
+
+    <label for="ano">Ano de nascimento</label>
+    <input type="number" id="anoDeNascimento"><br>
+
+
+
+    <button onclick="enviarResposta()">Enviar</button>
+
+    <script type="text/javascript">
+        function enviarResposta() {
+            var dia = document.getElementById('inputUsuarioDia').value
+            var mes = document.getElementById('mesDeNascimento').value
+            var dia = document.getElementById('anoDeNascimento').value
+            window.alert('Você nasceu dia ' + dia + 'de' + mes + "de" + ano)
+        }
+    </script>
+</body>
+
+</html>
