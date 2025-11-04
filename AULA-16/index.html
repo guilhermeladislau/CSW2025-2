@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 16</title>
+</head>
+<style>
+    .campoInput {
+        margin-bottom: 1%;
+    }
+</style>
+
+<body>
+    <h3>Digite sua data de nascimento nos campos abaixo: </h3>
+    <input id="inputDia" placeholder="Digite o dia de nascimento" size="40" class="campoInput"> <br>
+    <input id="inputMes" placeholder="Digite o mês (em número)" size="40" class="campoInput"> <br>
+    <input id="inputAno" placeholder="Digite o ano" size="40" class="campoInput"> <br>
+    <button onClick="enviarResposta()">Calcular</button>
+
+
+    
+</body>
+<script>
+    function enviarResposta() {
+        var diaNasc = document.getElementById('inputDia').value
+        var mesNasc = document.getElementById('inputMes').value
+        var anoNasc = document.getElementById('inputAno').value
+
+        var dia = '04'
+        var mes = '11'
+        var ano = '2025'
+        
+        idade = ano - anoNasc
+
+        if (mesNasc < mes){
+            document.writeln(idade)
+        } else{
+            document.writeln(--idade)
+        }
+    }
+
+
+
+
+</script>
+
+
+
+
+</html>
